@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Digital Portfolio</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scipts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/client.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+
+    <section class="container-fluid" id="home">
+        <div class="v-center text-center">
+            <h5>Hello, my name is Zander Blasingame and I am a</h5>
+            <!--<h1 class="text-center">PROGRAMMER  ENGINEER LEADER</h1>-->
+            <h1 class="row" id="programmer">PROGRAMMER</h1>
+            <h1 class="row" id="engineer">ENGINEER</h1>
+            <h1 class="row" id="leader">LEADER</h1>
+        </div>
+        <a id="downBtn" class="text-center" href="#about">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </a>
+        <!--<a id="downBtn" href="#about" class="btn btn-default" role="button">Learn More</a>-->
+
+    </section>
+
+    <div id="navbar" class="navbar-fixed-top navbar-trans navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">Zander Blasingame</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid" id="about">
+        <h2 class="text-center">About Me</h2>
+        <hr />
+        <p class="textWhite col-md-8 col-md-offset-2">
+            I am currently a student at Clarkson University studying Electrical and Computer Engineering; additionally,
+            In my free time I work on developing web and android applications. Likewise, I have had extensive programming experience with both frontend and backend development; furthermore, I am comfortable with working with low level languages such as an Assembly language.
+        </p>
+    </section>
+
+    <section class="container-fluid" id="skills">
+        <h2 class="text-center">Skills</h2>
+        <hr />
+        <!--accordian-->
+        <div class="panel-group accordian" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Programming</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <p class="textWhite">I am fluent with the following languages: Python, Java, and JavaScript; furthermore, I understand and have worked with: C, C++, an Assembly Language, Bash Shell Script, and more. I have developed many applications </p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Leadership</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>TO FILL LATER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Engineering</a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>TO FILL LATER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section></section>
+    <section class="container-fluid" id="projects">
+        <h2 class="text-center">Projects</h2>
+        <hr />
+    </section>
+    <section class="container-fluid" id="experience">
+        <h2 class="text-center">Experience</h2>
+        <hr />
+        <h3>University of New Hampshire InterOperability Laboratory</h3>
+    </section>
+
+
+</body>
+</html>
