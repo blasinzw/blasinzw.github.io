@@ -169,6 +169,22 @@
     //         	return false;
 	// 		});
 	//
+		// Custon contact code
+		$('#contact-form').submit(function(e) {
+			e.preventDefault();
+			var name = $('#c_name').val();
+			var c_email = $('#c_email').val();
+			var c_message = $('#c_message').val();
+
+			if (( c_name== '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email) )) {
+				response.fadeIn(500);
+				response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
+			}else {
+				response.fadeIn(500);
+				response.html('<i class="fa fa-check-circle"></i> Form successfully submitted.')
+			}
+		});
+
 	});
 
 })(jQuery);
