@@ -171,7 +171,7 @@
 	//
 		// Custon contact code
 		$('#contact-form').submit(function(e) {
-			e.preventDefault();
+			// e.preventDefault();
 
 			var name = $('#c_name').val();
 			var email = $('#c_email').val();
