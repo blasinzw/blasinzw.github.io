@@ -440,8 +440,11 @@ textarea.form-control {
     line-height: 140px;
     z-index: 2;
 }
+
+/*Changed % sign to years*/
 .percent:after {
-    content: "%";
+    /*content: "%";*/
+	content: 'yrs';
     font-size: 50%;
     margin-left: 0.1em;
 }
