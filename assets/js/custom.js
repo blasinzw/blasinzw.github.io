@@ -177,6 +177,8 @@
 			var email = $('#c_email').val();
 			var message = $('#c_message').val();
 
+			var response = $('#contact-form .ajax-response');
+
 			if (( name == '' || email == '' || message == '') || (!isValidEmailAddress(email) )) {
 				response.fadeIn(500);
 				response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
