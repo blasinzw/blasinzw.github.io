@@ -172,11 +172,12 @@
 		// Custon contact code
 		$('#contact-form').submit(function(e) {
 			e.preventDefault();
-			var name = $('#c_name').val();
-			var c_email = $('#c_email').val();
-			var c_message = $('#c_message').val();
 
-			if (( c_name== '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email) )) {
+			var name = $('#c_name').val();
+			var email = $('#c_email').val();
+			var message = $('#c_message').val();
+
+			if (( name == '' || email == '' || message == '') || (!isValidEmailAddress(email) )) {
 				response.fadeIn(500);
 				response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
 			}else {
